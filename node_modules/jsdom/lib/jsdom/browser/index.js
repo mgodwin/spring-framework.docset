@@ -285,7 +285,22 @@ exports.createWindow = function(dom, options) {
       width : 0,
       height : 0
     },
-    Image : NOT_IMPLEMENTED(null, 'window.Image')
+    Image : NOT_IMPLEMENTED(null, 'window.Image'),
+
+    // Note: these will not be necessary for newer Node.js versions, which have
+    // typed arrays in V8 and thus on every global object. (That is, in newer
+    // versions we'll get `ArrayBuffer` just as automatically as we get
+    // `Array`.) But to support older versions, we explicitly set them here.
+    Int8Array: Int8Array,
+    Int16Array: Int16Array,
+    Int32Array: Int32Array,
+    Float32Array: Float32Array,
+    Float64Array: Float64Array,
+    Uint8Array: Uint8Array,
+    Uint8ClampedArray: Uint8ClampedArray,
+    Uint16Array: Uint16Array,
+    Uint32Array: Uint32Array,
+    ArrayBuffer: ArrayBuffer
   };
 
   var window = new DOMWindow(options);
