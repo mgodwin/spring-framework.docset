@@ -4,8 +4,9 @@ sqlite3 = require('sqlite3').verbose()
 
 module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-copy'
-
+  grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.initConfig
+    clean: ["build"]
     copy:
       plist:
         src: 'Info.plist'
@@ -76,4 +77,4 @@ module.exports = (grunt) ->
           done(false)
         itemsAdded++
 
-  grunt.registerTask 'default', ['copy', 'buildIndex']
+  grunt.registerTask 'default', ['clean', 'copy', 'buildIndex']

@@ -1,9 +1,23 @@
 # Dash docset for the Spring Framework
 
-Generate docset
+## Add to Dash
 
-    npm install -g grunt-cli
+* __Docset Feed:__ [Click here](dash-feed://http%3A%2F%2Fmgodwin.github.io%2Fspring-framework.docset%2Fspring-framework.xml) to add the spring-framework docset feed to Dash.
+* __Download Docset Manually:__ Visit the [Releases page](https://github.com/mgodwin/spring-framework.docset/releases) and download the latest release, or a specific version of the docset.
+
+
+## Contributing
+
+### How to Build
+
+    npm install -g grunt-cli    # Only necessary if not already installed
     grunt
-    # Docset will be placed inside build/spring-framework.docset
 
-Add it to Dash by clicking the '+' in the Docsets panel
+The docset will be placed in the `build` directory.
+
+Add it to Dash by clicking the '+' in the Docsets panel.
+
+### General project structure
+The docset is generated dynamically by parsing the table of contents page of the Spring Framework documentation using `jsdom` and `jquery`.  Chapter headings are set as 'Guides' and section headings are set as 'Sections' in Dash.  
+
+If you have a better approach, or find a bug, please submit an issue or a pull request!
