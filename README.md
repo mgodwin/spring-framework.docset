@@ -2,7 +2,7 @@
 
 ## Add to Dash
 
-* __Docset Feed:__ dash-feed://http%3A%2F%2Fmgodwin.github.io%2Fspring-framework.docset%2Fspring-framework.xml
+* __Docset Feed:__ http://mgodwin.github.io/spring-framework.docset/spring-framework.xml
 * __Download Docset Manually:__ Visit the [Releases page](https://github.com/mgodwin/spring-framework.docset/releases) and download the latest release, or a specific version of the docset.
 
 
