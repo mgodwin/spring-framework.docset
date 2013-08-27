@@ -20,6 +20,8 @@ The docset will be placed in the `build` directory.
 Add it to Dash by clicking the '+' in the Docsets panel.
 
 ### General project structure
-The docset is generated dynamically by parsing the table of contents page of the Spring Framework documentation using `jsdom` and `jquery`.  Chapter headings are set as 'Guides' and section headings are set as 'Sections' in Dash.  
+The docset is generated dynamically by parsing the table of contents page of the Spring Framework documentation using `cheerio`.  Chapter headings are set as 'Guides' and section headings are set as 'Sections' in Dash.  
+
+Javadocs are generated using the tool provided by kapeli.
 
 If you have a better approach, or find a bug, please submit an issue or a pull request!
