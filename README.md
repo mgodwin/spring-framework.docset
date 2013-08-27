@@ -1,5 +1,7 @@
 # Dash docset for the Spring Framework
 
+![Dash with Spring Framework Documentation](http://mgodwin.github.io/spring-framework.docset/screenshot.png)
+
 ## Add to Dash
 
 * __Docset Feed:__ http://mgodwin.github.io/spring-framework.docset/spring-framework.xml
